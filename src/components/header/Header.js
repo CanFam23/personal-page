@@ -3,27 +3,27 @@ import './Header.css'
 function Header(){
 
     return (
-        <header>
-            <nav>
+        <header id="nav-header">
+            <nav id="nav-bar">
                 <span id="logo">
                     <a href="">NC</a>
                 </span>
                 <ul className="nav-list">
                     <li className="nav-item">
                         <hr className="nav-line"/>
-                        <a href="#">About</a>
+                        <a className="nav-link" href="#">About</a>
                     </li>
                     <li className="nav-item">
                         <hr className="nav-line"/>
-                        <a href="#">Projects</a>
+                        <a className="nav-link" href="#">Projects</a>
                     </li>
                     <li className="nav-item">
                         <hr className="nav-line"/>
-                        <a href="#">Experience</a>
+                        <a className="nav-link" href="#">Experience</a>
                     </li>
                     <li className="nav-item">
                         <hr className="nav-line"/>
-                        <a href="#">Contact</a>
+                        <a className="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>

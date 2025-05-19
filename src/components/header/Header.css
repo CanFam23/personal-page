@@ -1,4 +1,4 @@
-header{
+#nav-header{
     font-family: var(--font-heading);
     color: var(--color-white);
     background-color: var(--color-dark-grey);
@@ -9,17 +9,17 @@ header{
     max-height: 75px;
 }
 
-a{
+#nav-bar a{
     text-decoration: none;
     color: var(--color-white);
 }
 
-a:hover{
+#nav-bar a:hover{
     text-decoration: underline;
     color: var(--color-purple);
 }
 
-nav{
+#nav-bar{
     display: flex;
     justify-self: space-between;
     align-items: center;
