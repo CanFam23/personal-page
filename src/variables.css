@@ -1,0 +1,14 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-light-grey: #626262;
+    --color-medium-grey: #3C3B3B;
+    --color-dark-grey: #2B2B2B;
+    --color-black: #212121;
+    --color-red: #FF4B4E;
+    --color-orange: #FFAC6D;
+    --color-purple: #E564FF;
+
+    --font-heading: 'Viga', sans-serif;
+    --font-body: 'Rubik', sans-serif;
+
+}
