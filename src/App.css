@@ -4,3 +4,7 @@ body{
     background-color: var(--color-black);
     margin: 0px;
 }
+
+main {
+    margin: 0px var(--side-margin);
+}
