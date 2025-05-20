@@ -101,4 +101,8 @@
   #top-about {
     flex-direction: column-reverse;
   }
+
+  #resume-btn{
+    font-size: 0.6rem;
+  }
 }

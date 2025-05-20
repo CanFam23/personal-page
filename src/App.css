@@ -1,10 +1,32 @@
-@import './variables.css';
+@import "./variables.css";
 
-body{
-    background-color: var(--color-black);
-    margin: 0px;
+body {
+  background-color: var(--color-black);
+  margin: 0px;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--color-light-grey),
+      var(--color-light-grey) 1px,
+      transparent 1px,
+      transparent calc(10vw)
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--color-light-grey),
+      var(--color-light-grey) 1px,
+      transparent 1px,
+      transparent calc(10vw)
+    ),
+    repeating-radial-gradient(circle at center, #000000 1px, rgba(255, 255, 255, 0) 5px);
 }
 
 main {
-    margin: 0px var(--side-margin);
+  margin: 0px var(--side-margin);
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0px var(--side-margin-small);
+  }
 }
