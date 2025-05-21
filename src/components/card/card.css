@@ -1,11 +1,11 @@
 .card{
-    background-color: var(--color-medium-grey);
-    border: 3px solid var(--color-light-grey);
+    background-color: var(--color-secondary-bg);
+    border: 3px solid var(--color-border);
     border-radius: 10px;
     margin: 1vw 1vw;
     padding: 1vw 1vw;
     font-family: var(--font-body);
-    color: var(--color-white);
+    color: var(--color-text);
     transition: all 0.15s ease-in-out;
 }
 
