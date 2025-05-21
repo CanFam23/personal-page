@@ -9,8 +9,8 @@ function Card(props) {
           <FontAwesomeIcon icon={props.icon} size={props.iconSize} style={{ color: props.iconColor }}/>
         </div>
         <div className="card-title">
-          <h3>{props.name}</h3>
-          <p>{props.desc}</p>
+          <h3 className="card-lang">{props.name}</h3>
+          <p className="card-desc">{props.desc}</p>
         </div>
       </div>
       <div className="card-body">

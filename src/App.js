@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
+import OtherTech from './components/otherTech/OtherTech';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <main>
         <About/>
+        <OtherTech/>
       </main>
     </div>
   );

@@ -5,6 +5,7 @@
     margin: 1vw 1vw;
     padding: 1vw 1vw;
     font-family: var(--font-body);
+    color: var(--color-white);
 }
 
 .card-header{
@@ -18,11 +19,12 @@ h3{
 }
 
 .card-title > *{
-    margin: 0vw 1vw;
+    margin: 0vw 0.5vw;
 }
 
-.card-title > p{
-    font-size: 1rem;
+.card-desc{
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .card-body{
