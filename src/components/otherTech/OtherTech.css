@@ -1,0 +1,31 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 1rem;
+}
+
+.card-grid > * {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.other-tech{
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(125px, max-content));
+  }
+  .card-grid .card-lang {
+    font-size: 0.7rem;
+  }
+
+  .card-grid .card-desc {
+    font-size: 0.6rem;
+  }
+}
