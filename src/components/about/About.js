@@ -77,7 +77,7 @@ function About() {
         </div>
         <div id="lower-about">
           <h3 id="prim-tech">Primary Technologies</h3>
-          <div class="tech-cards">
+          <div className="tech-cards">
             <Card
             name="Java"
             desc="Programming Language"

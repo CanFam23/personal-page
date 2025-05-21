@@ -1,12 +1,13 @@
 :root {
-    --color-white: #FFFFFF;
-    --color-light-grey: #626262;
-    --color-medium-grey: #3C3B3B;
-    --color-dark-grey: #2B2B2B;
-    --color-black: #212121;
-    --color-red: #FF4B4E;
-    --color-orange: #FFAC6D;
-    --color-purple: #E564FF;
+    --color-text: #FFFFFF;
+    --color-border: #626262;
+    --color-secondary-bg: #3C3B3B;
+    --color-primary-bg: #2B2B2B;
+    --color-app-bg: #212121;
+    --color-exp-title: #FF4B4E;
+    --color-project-title: #FFAC6D;
+    --color-nav-item-bg: #E564FF;
+    --color-tech-bg: #65558F;
 
     --font-heading: 'Viga', sans-serif;
     --font-body: 'Rubik', sans-serif;
