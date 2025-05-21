@@ -1,16 +1,26 @@
 import "./About.css";
+import Card from "../card/card";
 import headshot from "../../assets/Headshot.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faJava } from "@fortawesome/free-brands-svg-icons";
+import { faPython } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   return (
     <section id="about-section">
       <div id="about-icons">
         <h2 className="section-title">About</h2>
-        <button id="resume-btn" type="button"><FontAwesomeIcon icon={faDownload} style={{color: "#ffffff",}} id="download-icon"/>Download Resume</button>
+        <button id="resume-btn" type="button">
+          <FontAwesomeIcon
+            icon={faDownload}
+            style={{ color: "#ffffff" }}
+            id="download-icon"
+          />
+          Download Resume
+        </button>
         <a
           href="https://github.com/CanFam23"
           target="_blank"
@@ -62,11 +72,30 @@ function About() {
             </div>
           </div>
           <div id="headshot-container">
-            <img src={headshot} id="headshot" />
+            <img src={headshot} id="headshot" alt="Headshot of myself" />
           </div>
         </div>
         <div id="lower-about">
           <h3 id="prim-tech">Primary Technologies</h3>
+          <div class="tech-cards">
+            <Card
+            name="Java"
+            desc="Programming Language"
+            icon={faJava}
+            iconSize="3x"
+            iconColor="#f89820"
+            libraries="Spring/Spring Boot, Hibernate / JPA, JUnit, SLF4J, Gradle"
+          />
+
+          <Card
+            name="Python"
+            desc="Programming Language"
+            icon={faPython}
+            iconSize="3x"
+            iconColor="#3776AB"
+            libraries="NumPy, Sympy, MatPlotLib, Seaborn, SciKit-Learn, Torch, NLTK, Flask"
+          />
+          </div>
         </div>
       </div>
     </section>

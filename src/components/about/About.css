@@ -6,6 +6,11 @@
   padding-left: 10px;
 }
 
+.tech-cards{
+  display: flex;
+  margin: auto 5vw;
+}
+
 #about-section{
     margin-top: 40px;
 }
@@ -22,7 +27,7 @@
 
   border: 3px solid var(--color-light-grey);
   border-radius: 10px;
-  background-color: var(--color-medium-grey);
+  background-color: var(--color-dark-grey);
 }
 
 #about-icons {
@@ -98,6 +103,10 @@
 }
 
 @media (max-width: 768px) {
+  .tech-cards{
+    flex-direction: column;
+  }
+
   #top-about {
     flex-direction: column-reverse;
   }
