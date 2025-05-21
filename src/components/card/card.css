@@ -6,6 +6,11 @@
     padding: 1vw 1vw;
     font-family: var(--font-body);
     color: var(--color-white);
+    transition: all 0.15s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .card-header{
