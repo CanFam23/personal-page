@@ -1,0 +1,90 @@
+.exp-body {
+  --text-ver-margin: 12px;
+  --text-side-margin: 0;
+
+  font-family: var(--font-body);
+  color: var(--color-text);
+
+  border: 3px solid var(--color-border);
+  border-radius: 10px;
+  background-color: var(--color-primary-bg);
+}
+
+.job-wrapper {
+  margin-bottom: 30px;
+}
+
+.job-list {
+  position: relative;
+}
+
+.job-list::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+.job-content {
+  position: relative;
+  left: 7%;
+  width: 90%;
+  transform: translateY(-5px);
+}
+
+.job-company {
+  font-size: 1.75rem;
+  color: var(--color-exp-title);
+  margin: var(--text-ver-margin) var(--text-side-margin);
+}
+
+.job-position {
+  font-size: 1.25rem;
+  margin: var(--text-ver-margin) var(--text-side-margin);
+}
+
+.job-date {
+  margin: var(--text-ver-margin) var(--text-side-margin);
+}
+
+.job-desc {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.circle {
+  position: absolute;
+  left: 5%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .job-content {
+    left: 10%;
+    width: 88%;
+    transform: translateY(-3px);
+  }
+
+  .job-company {
+    font-size: 1.25rem;
+  }
+
+  .job-position {
+    font-size: 1.1rem;
+  }
+
+  .job-desc {
+    font-size: 1rem;
+  }
+}

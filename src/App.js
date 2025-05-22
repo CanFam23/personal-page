@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import OtherTech from './components/otherTech/OtherTech';
 import Project from './components/project/Project';
+import Experience from './components/experience/Experience';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <About/>
         <OtherTech/>
         <Project/>
+        <Experience/>
       </main>
     </div>
   );
