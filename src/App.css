@@ -30,7 +30,7 @@ main > * {
 }
 
 .section-title {
-  font-family: var(--font-header);
+  font-family: var(--font-heading);
   color: var(--color-text);
   font-size: 2rem;
   margin-bottom: 3px;
