@@ -25,7 +25,7 @@ function Contact() {
   };
 
   return (
-    <>
+    <div id="contact">
       <h2 className="section-title">Contact Me</h2>
       <form id="contact-form" onSubmit={onSubmit}>
         <label htmlFor="input-name">Your Name</label>
@@ -69,7 +69,7 @@ function Contact() {
           Submit Form
         </button>
       </form>
-    </>
+    </div>
   );
 }
 

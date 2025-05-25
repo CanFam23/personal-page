@@ -7,30 +7,30 @@ function Navbar() {
     <header id="nav-header">
       <nav id="nav-bar">
         <span id="logo">
-          <a href="">NC</a>
+          <a href="#about-section">NC</a>
         </span>
         <ul className="nav-list">
           <li className="nav-item">
             <hr className="nav-line" />
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#about-section">
               About
             </a>
           </li>
           <li className="nav-item">
             <hr className="nav-line" />
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#projects">
               Projects
             </a>
           </li>
           <li className="nav-item">
             <hr className="nav-line" />
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#experience">
               Experience
             </a>
           </li>
           <li className="nav-item">
             <hr className="nav-line" />
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#contact">
               Contact
             </a>
           </li>

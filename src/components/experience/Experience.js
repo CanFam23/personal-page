@@ -64,7 +64,7 @@ function ExpEntry(props) {
 
 function Experience() {
   return (
-    <section>
+    <section id="experience">
       <h2 className="section-title">Experience</h2>
       <div className="exp-body">
         <div className="vl"></div>

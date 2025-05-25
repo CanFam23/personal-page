@@ -3,6 +3,7 @@
   --color-border: #626262;
   --color-secondary-bg: #3c3b3b;
   --color-primary-bg: #2b2b2b;
+  --color-primary-bg-transparent: rgba(43, 43, 43, 0.6);
   --color-app-bg: #212121;
   --color-exp-title: #ff4b4e;
   --color-project-title: #ffac6d;
