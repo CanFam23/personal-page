@@ -4,21 +4,12 @@ body {
   background-color: var(--color-app-bg);
   margin: 0px;
 
-  background-image: repeating-linear-gradient(
-      to right,
-      var(--color-border),
-      var(--color-border) 1px,
-      transparent 1px,
-      transparent calc(10vw)
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      var(--color-border),
-      var(--color-border) 1px,
-      transparent 1px,
-      transparent calc(10vw)
-    ),
-    repeating-radial-gradient(circle at center, #000000 1px, rgba(255, 255, 255, 0) 5px);
+  background-image: 
+    repeating-radial-gradient(
+      circle at center,
+      #000000 1px,
+      rgba(255, 255, 255, 0) 5px
+    );
 }
 
 main {
@@ -40,5 +31,8 @@ main > * {
 @media (max-width: 768px) {
   main {
     margin: 0px var(--side-margin-small);
+  }
+  main > * {
+    margin-bottom: 16vw;
   }
 }
