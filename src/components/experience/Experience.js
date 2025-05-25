@@ -15,7 +15,8 @@ const experiences = [
       "Welcomed club members and guests, providing assistance with parking vehicles",
       "Cleaned and maintained golf clubs and golf carts, ensuring they were ready for use",
       "Organized and upheld the cleanliness of the bag room, managing inventory efficiently",
-      "Assisted with tournament preparations and setting up equipment"    ],
+      "Assisted with tournament preparations and setting up equipment",
+    ],
   },
   {
     company: "Whitefish Mountain Resort",
@@ -25,7 +26,8 @@ const experiences = [
       "Assisted guests with safely boarding and exiting ski lifts, ensuring a smooth experience",
       "Conducted opening inspections and closing shutdown procedures to maintain lift safety",
       "Maintained and organized lift mazes, ramps, and signage for efficient guest flow",
-      "Monitored weather conditions and adjusted lift operations accordingly"    ],
+      "Monitored weather conditions and adjusted lift operations accordingly",
+    ],
   },
 ];
 
@@ -41,7 +43,11 @@ const expComps = experiences.map((exp, index) => (
 
 function ExpEntry(props) {
   const bps = props.bulletPoints;
-  const bpsLi = bps.map((bp, index) => <li key={index} className="bullet-point">{bp}</li>);
+  const bpsLi = bps.map((bp, index) => (
+    <li key={index} className="bullet-point">
+      {bp}
+    </li>
+  ));
 
   return (
     <div className="job-wrapper">

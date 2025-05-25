@@ -4,12 +4,11 @@ body {
   background-color: var(--color-app-bg);
   margin: 0px;
 
-  background-image: 
-    repeating-radial-gradient(
-      circle at center,
-      #000000 1px,
-      rgba(255, 255, 255, 0) 5px
-    );
+  background-image: repeating-radial-gradient(
+    circle at center,
+    #000000 1px,
+    rgba(255, 255, 255, 0) 5px
+  );
 }
 
 main {

@@ -21,9 +21,8 @@
   transform: scale(1.03) rotate(-1deg);
 }
 
-
-.other-tech{
-    justify-content: center;
+.other-tech {
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

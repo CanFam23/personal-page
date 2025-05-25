@@ -6,7 +6,11 @@ function Card(props) {
     <div className="card">
       <div className="card-header">
         <div className="card-image">
-          <FontAwesomeIcon icon={props.icon} size={props.iconSize} style={{ color: props.iconColor }}/>
+          <FontAwesomeIcon
+            icon={props.icon}
+            size={props.iconSize}
+            style={{ color: props.iconColor }}
+          />
         </div>
         <div className="card-title">
           <h3 className="card-lang">{props.name}</h3>

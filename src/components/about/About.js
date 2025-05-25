@@ -79,22 +79,22 @@ function About() {
           <h3 id="prim-tech">Primary Technologies</h3>
           <div className="tech-cards">
             <Card
-            name="Java"
-            desc="Programming Language"
-            icon={faJava}
-            iconSize="3x"
-            iconColor="#f89820"
-            libraries="Spring/Spring Boot, Hibernate / JPA, JUnit, SLF4J, Gradle"
-          />
+              name="Java"
+              desc="Programming Language"
+              icon={faJava}
+              iconSize="3x"
+              iconColor="#f89820"
+              libraries="Spring/Spring Boot, Hibernate / JPA, JUnit, SLF4J, Gradle"
+            />
 
-          <Card
-            name="Python"
-            desc="Programming Language"
-            icon={faPython}
-            iconSize="3x"
-            iconColor="#3776AB"
-            libraries="NumPy, Sympy, MatPlotLib, Seaborn, SciKit-Learn, Torch, NLTK, Flask"
-          />
+            <Card
+              name="Python"
+              desc="Programming Language"
+              icon={faPython}
+              iconSize="3x"
+              iconColor="#3776AB"
+              libraries="NumPy, Sympy, MatPlotLib, Seaborn, SciKit-Learn, Torch, NLTK, Flask"
+            />
           </div>
         </div>
       </div>

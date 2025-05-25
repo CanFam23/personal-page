@@ -1,5 +1,5 @@
 import "./OtherTech.css";
-import Card from "../card/card"
+import Card from "../card/card";
 import {
   faHtml5,
   faCss3Alt,
@@ -11,8 +11,8 @@ import {
 import { faDatabase, faR } from "@fortawesome/free-solid-svg-icons";
 
 function OtherTech() {
-  const iconSize = "2x"
-  
+  const iconSize = "2x";
+
   const tech = [
     {
       name: "HTML",
@@ -87,9 +87,7 @@ function OtherTech() {
   return (
     <section id="other-tech">
       <h2 className="section-title">Other Technologies</h2>
-      <div className="card-grid">
-        {techCards}
-      </div>
+      <div className="card-grid">{techCards}</div>
     </section>
   );
 }

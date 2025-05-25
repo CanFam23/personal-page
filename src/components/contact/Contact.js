@@ -65,7 +65,9 @@ function Contact() {
           autoComplete="off"
           required
         ></textarea>
-        <button id="submit-btn" type="submit">Submit Form</button>
+        <button id="submit-btn" type="submit">
+          Submit Form
+        </button>
       </form>
     </>
   );
