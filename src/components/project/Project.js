@@ -67,11 +67,6 @@ function ProjectCard(props) {
 
   const techCards = tech.map((t, index) => <TechCard key={index} title={t} />);
 
-  // Optional: log each card to debug
-  tech.forEach(() => {
-    console.log(techCards);
-  });
-
   return (
     <div className="project-card">
       <div className="project-header">

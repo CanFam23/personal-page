@@ -41,7 +41,7 @@ const expComps = experiences.map((exp, index) => (
 
 function ExpEntry(props) {
   const bps = props.bulletPoints;
-  const bpsLi = bps.map((bp, index) => <li class="bullet-point">{bp}</li>);
+  const bpsLi = bps.map((bp, index) => <li key={index} className="bullet-point">{bp}</li>);
 
   return (
     <div className="job-wrapper">
@@ -60,9 +60,9 @@ function Experience() {
   return (
     <section>
       <h2 className="section-title">Experience</h2>
-      <div class="exp-body">
-        <div class="vl"></div>
-        <div class="job-list">{expComps}</div>
+      <div className="exp-body">
+        <div className="vl"></div>
+        <div className="job-list">{expComps}</div>
       </div>
     </section>
   );
