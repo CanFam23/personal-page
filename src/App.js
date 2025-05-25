@@ -5,6 +5,7 @@ import OtherTech from './components/otherTech/OtherTech';
 import Project from './components/project/Project';
 import Experience from './components/experience/Experience';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Experience/>
         <Contact/>
       </main>
+      <Footer/>
     </div>
   );
 }
