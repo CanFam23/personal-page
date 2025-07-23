@@ -1,6 +1,7 @@
 import "./About.css";
 import Card from "../card/card";
 import headshot from "../../assets/Headshot.jpg";
+import resume from "../..//assets/Nick_Clouse_Resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
@@ -8,12 +9,27 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faJava } from "@fortawesome/free-brands-svg-icons";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
 
+// Function to download resume pdf when the download button is clicked
+function onButtonClick(){
+  const resUrl = resume;
+  const link = document.createElement("a");
+  link.href = resUrl;
+  link.download = "Nick_Clouse_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 function About() {
   return (
     <section id="about-section">
       <div id="about-icons">
         <h2 className="section-title">About</h2>
-        <button id="resume-btn" type="button">
+        <button 
+        id="resume-btn" 
+        type="button"
+        onClick={onButtonClick}
+        >
           <FontAwesomeIcon
             icon={faDownload}
             style={{ color: "#ffffff" }}
