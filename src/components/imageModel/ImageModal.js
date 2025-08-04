@@ -31,7 +31,7 @@ function ImageModal({thumbnailSrc, alt}){
                 <div className="full-screen-overlay"
                 onClick={() => setIsOpen(false)}
                 >
-                    <div className="modal-overlay" >
+                    <div className="modal-overlay" onClick={(e) => e.stopPropagation()}>
                         <button className="close-button" onClick={() => setIsOpen(false)}>×</button>
                         <img src={thumbnailSrc} alt={alt} className="modal-image"/>
                     </div>
