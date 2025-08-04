@@ -17,14 +17,6 @@
   color: var(--color-text);
 }
 
-.project-img {
-  width: 100%;
-}
-
-.project-img:hover {
-  cursor: pointer;
-}
-
 .project-header {
   display: flex;
   align-items: center;

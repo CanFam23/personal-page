@@ -4,8 +4,13 @@ const experiences = [
   {
     company: "MSU - Space Science and Engineering Lab (SSEL)",
     position: "Software Engineer Intern",
-    dateRange: "May 2025 – Present",
-    bulletPoints: [],
+    dateRange: "May 2025 – August 2025",
+    bulletPoints: [
+    "Improved data parsing eﬃciency by 62.5% by utilizing multiprocessing in Python.",
+    "Developed a scalable data pipeline capable of handling gigabyte-scale datasets.",
+    "Built a web application using Python, integrated with InfluxDB, to visualize instrument data from the International Space Station.",
+    "Developed and optimized Ruby scripts to support large data transfers between satellite and a ground station, focusing on reliability and performance"
+    ],
   },
   {
     company: "Iron Horse Golf Club",

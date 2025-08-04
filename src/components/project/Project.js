@@ -4,41 +4,43 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import initMusicDemo from "../../assets/initMusicDemo.png";
 import BookRecDemo from "../../assets/BookRecDemo.png";
 import MazeRunnerDemo from "../../assets/MazeRunnerDemo.png";
+import ImageModal from "../imageModel/ImageModal";
+
+const projects = [
+  {
+    title: "InitMusic",
+    desc: "InitMusic is a music service that connects users to a vast library of thousands of songs, powered by the Deezer API. Main features include user data persistence, playlist management, song search via Deezer API, security questions for password recovery, and cached song queries for faster lookup.",
+    img: initMusicDemo,
+    gitLink: "https://github.com/CanFam23/initMusic",
+    techUsed: [
+      "Java",
+      "JavaScript",
+      "CSS",
+      "Gradle",
+      "JUnit",
+      "MySQL",
+      "HTML",
+      "Spring Boot",
+      "SLF4J",
+    ],
+  },
+  {
+    title: "Book Recommender",
+    desc: "A book recommendation system using data processing and machine learning techniques. Features include TF-IDF vectorization, cosine similarity, sentiment analysis, logistic regression, stopword removal, and majority voting to predict book ratings.",
+    img: BookRecDemo,
+    gitLink: "https://github.com/CanFam23/BookRecommender",
+    techUsed: ["Python", "Pandas", "Numpy", "Scikit-learn", "NLTK", "Flask"],
+  },
+  {
+    title: "MazeRunner",
+    desc: "MazeRunner is a Java-based puzzle-action game with object-oriented design, multithreading, and basic AI. It includes features like enemy logic, level progression, and file-based map generation. Developed as a team project to demonstrate software engineering in game dev.",
+    img: MazeRunnerDemo,
+    gitLink: "https://github.com/CanFam23/MazeRunner",
+    techUsed: ["Java", "Java Swing"],
+  },
+];
 
 function Project() {
-  const projects = [
-    {
-      title: "InitMusic",
-      desc: "InitMusic is a music service that connects users to a vast library of thousands of songs, powered by the Deezer API. Main features include user data persistence, playlist management, song search via Deezer API, security questions for password recovery, and cached song queries for faster lookup.",
-      img: initMusicDemo,
-      gitLink: "https://github.com/CanFam23/initMusic",
-      techUsed: [
-        "Java",
-        "JavaScript",
-        "CSS",
-        "Gradle",
-        "JUnit",
-        "MySQL",
-        "HTML",
-        "Spring Boot",
-        "SLF4J",
-      ],
-    },
-    {
-      title: "Book Recommender",
-      desc: "A book recommendation system using data processing and machine learning techniques. Features include TF-IDF vectorization, cosine similarity, sentiment analysis, logistic regression, stopword removal, and majority voting to predict book ratings.",
-      img: BookRecDemo,
-      gitLink: "https://github.com/CanFam23/BookRecommender",
-      techUsed: ["Python", "Pandas", "Numpy", "Scikit-learn", "NLTK", "Flask"],
-    },
-    {
-      title: "MazeRunner",
-      desc: "MazeRunner is a Java-based puzzle-action game with object-oriented design, multithreading, and basic AI. It includes features like enemy logic, level progression, and file-based map generation. Developed as a team project to demonstrate software engineering in game dev.",
-      img: MazeRunnerDemo,
-      gitLink: "https://github.com/CanFam23/MazeRunner",
-      techUsed: ["Java", "Java Swing"],
-    },
-  ];
 
   const projCards = projects.map((project, index) => {
     return (
@@ -97,21 +99,19 @@ function ProjectCard(props) {
       <div className="project-body">
         {props.index % 2 === 1 ? (
           <>
-            <img
-              className="project-img"
-              src={props.img}
+            <ImageModal
+              thumbnailSrc={props.img}
               alt={props.title + " demo image"}
-            ></img>
+            ></ImageModal>
             <p>{props.desc}</p>
           </>
         ) : (
           <>
             <p>{props.desc}</p>
-            <img
-              className="project-img"
-              src={props.img}
-              alt={props.desc + " image"}
-            ></img>
+            <ImageModal
+              thumbnailSrc={props.img}
+              alt={props.title + " demo image"}
+            ></ImageModal>
           </>
         )}
       </div>

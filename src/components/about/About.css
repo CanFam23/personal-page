@@ -3,10 +3,6 @@
   margin: auto 5vw;
 }
 
-#about-section {
-  margin-top: 100px;
-}
-
 #name {
   font-family: var(--font-header);
   text-align: center;
