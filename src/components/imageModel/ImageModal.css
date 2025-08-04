@@ -55,6 +55,11 @@
   margin-bottom: 5px;
 }
 
+.image-hint{
+  font-size: 0.6rem;
+  margin-top: 0;
+}
+
 @media (max-width: 768px){
   .modal-image{
     max-width: 95vw;
