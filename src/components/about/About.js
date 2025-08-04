@@ -78,7 +78,7 @@ function About() {
             </header>
 
             <p id="about-p">
-              I’m a junior student-athlete, majoring in both Computer Science
+              I’m a senior student-athlete, majoring in both Computer Science
               and Data Science at Carroll College while kicking and punting on
               the football team.
             </p>
