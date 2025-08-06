@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import initMusicDemo from "../../assets/initMusicDemo.png";
 import BookRecDemo from "../../assets/BookRecDemo.png";
 import MazeRunnerDemo from "../../assets/MazeRunnerDemo.png";
-import ImageModal from "../imageModel/ImageModal";
+import ImageModal from "../imageModal/ImageModal";
 
 const projects = [
   {
