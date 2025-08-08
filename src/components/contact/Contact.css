@@ -7,17 +7,16 @@
   background-color: var(--color-primary-bg);
   display: flex;
   flex-direction: column;
-
   padding: 10px 10px;
 }
 
 #contact-form label,
-button {
+#contact-form button {
   margin-top: 20px;
 }
 
 #contact-form input,
-textarea {
+#contact-form textarea {
   font-family: var(--font-body);
   padding: 5px 5px;
   border-radius: 10px;
@@ -49,4 +48,28 @@ textarea {
   transform: scale(1.05);
   background-color: rgb(154, 154, 154);
   cursor: pointer;
+}
+
+#form-msg{
+  align-self: center;
+  font-weight: 400;
+  padding: 10px 10px;
+  border-radius: 10px;
+  animation: slideInFromRight 0.5s ease-in-out forwards;
+}
+
+#h-captcha{
+  align-self: center;
+  margin-top: 20px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-250%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }

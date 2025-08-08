@@ -1,9 +1,32 @@
 import "./Contact.css";
+import { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 function Contact() {
+  const [showMsg, setShowMsg] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState("Email sent!");
+  const { register, handleSubmit, setValue } = useForm();
+
+  const onHCaptchaChange = (token) => {
+    setValue("h-captcha-response", token);
+  };
+
+  useEffect(() => {
+    if (!showMsg) return;
+
+    const timer = setTimeout(() => {
+      setShowMsg(false);
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, [showMsg]);
+
   const onSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    const form = event.target;
+    const formData = new FormData(form);
 
     formData.append("access_key", "9c22eba1-3e21-4e2d-9f44-acc0631c81cb");
 
@@ -20,8 +43,15 @@ function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      setMessage("Email sent!");
+      setSuccess(true);
+      form.reset();
+    } else {
+      setMessage("Error sending email, please try again.");
+      setSuccess(false);
     }
+
+    setShowMsg(true);
   };
 
   return (
@@ -34,7 +64,7 @@ function Contact() {
           type="text"
           name="name"
           autoComplete="off"
-          placeholder="nick clouse"
+          placeholder="John Doe"
           required
         />
 
@@ -44,7 +74,7 @@ function Contact() {
           type="email"
           name="email"
           autoComplete="off"
-          placeholder="example123@gmail.com"
+          placeholder="johndoe@example.com"
           required
         />
 
@@ -65,9 +95,26 @@ function Contact() {
           autoComplete="off"
           required
         ></textarea>
+
+        <HCaptcha
+          sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+          reCaptchaCompat={false}
+          onVerify={onHCaptchaChange}
+          id="h-captcha"
+        />
+
         <button id="submit-btn" type="submit">
           Submit Form
         </button>
+
+        {showMsg && (
+          <p
+            id="form-msg"
+            style={{ "background-color": success ? "green" : "red" }}
+          >
+            {message}
+          </p>
+        )}
       </form>
     </div>
   );
