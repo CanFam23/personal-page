@@ -10,7 +10,7 @@ const experiences = [
       "Improved data parsing eﬃciency by 62.5% by utilizing multiprocessing in Python.",
       "Developed a scalable data pipeline capable of handling gigabyte-scale datasets.",
       "Built a web application using Python, integrated with InfluxDB, to visualize instrument data from the International Space Station.",
-      "Developed and optimized Ruby scripts to support large data transfers between satellite and a ground station, focusing on reliability and performance",
+      "Developed and optimized Ruby scripts to support large data transfers between satellite and a ground station, focusing on reliability and performance.",
     ],
   },
   {
@@ -18,10 +18,10 @@ const experiences = [
     position: "Outside Services",
     dateRange: "June 2023 – August 2024 (Seasonal)",
     bulletPoints: [
-      "Welcomed club members and guests, providing assistance with parking vehicles",
-      "Cleaned and maintained golf clubs and golf carts, ensuring they were ready for use",
-      "Organized and upheld the cleanliness of the bag room, managing inventory efficiently",
-      "Assisted with tournament preparations and setting up equipment",
+      "Welcomed club members and guests, providing assistance with parking vehicles.",
+      "Cleaned and maintained golf clubs and golf carts, ensuring they were ready for use.",
+      "Organized and upheld the cleanliness of the bag room, managing inventory efficiently.",
+      "Assisted with tournament preparations and setting up equipment.",
     ],
   },
   {
@@ -29,10 +29,10 @@ const experiences = [
     position: "Lift Attendant",
     dateRange: "December 2023 – January 2024 (Seasonal)",
     bulletPoints: [
-      "Assisted guests with safely boarding and exiting ski lifts, ensuring a smooth experience",
-      "Conducted opening inspections and closing shutdown procedures to maintain lift safety",
-      "Maintained and organized lift mazes, ramps, and signage for efficient guest flow",
-      "Monitored weather conditions and adjusted lift operations accordingly",
+      "Assisted guests with safely boarding and exiting ski lifts, ensuring a smooth experience.",
+      "Conducted opening inspections and closing shutdown procedures to maintain lift safety.",
+      "Maintained and organized lift mazes, ramps, and signage for efficient guest flow.",
+      "Monitored weather conditions and adjusted lift operations accordingly.",
     ],
   },
 ];

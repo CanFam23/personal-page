@@ -1,5 +1,7 @@
 # personal-page
 
+[nickclouse.com](https://www.nickclouse.com)
+
 This is a personal webpage project created to learn and practice **React** while also gaining experience with **hosting on AWS**.  
 It serves as a hands-on way to explore modern web development concepts, including component-based UI design, responsive layouts, and basic accessibility best practices.  
 
