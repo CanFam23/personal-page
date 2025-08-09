@@ -52,6 +52,15 @@
   padding-left: 10px;
 }
 
+.nav-link{
+  border-bottom: 4px solid transparent;
+  height: 100%;
+}
+
+.nav-link:hover{
+  border-bottom: 4px solid var(--color-nav-item-bg);
+}
+
 #logo {
   font-size: 3rem;
   margin-left: 1vw;
