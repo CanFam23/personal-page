@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 function Contact() {
+  // States for controlling error / success message
   const [showMsg, setShowMsg] = useState(false);
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState("Email sent!");
@@ -13,6 +14,7 @@ function Contact() {
     setValue("h-captcha-response", token);
   };
 
+  // Display message for 10 seconds
   useEffect(() => {
     if (!showMsg) return;
 
@@ -23,6 +25,7 @@ function Contact() {
     return () => clearTimeout(timer);
   }, [showMsg]);
 
+  // Submit form
   const onSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
@@ -84,7 +87,7 @@ function Contact() {
           type="text"
           name="subject"
           autoComplete="off"
-          placeholder="ex. Let's go skiing"
+          placeholder="Se.g., Website Feedback, Feature Request, Interview invite"
           required
         />
 
@@ -103,7 +106,7 @@ function Contact() {
           id="h-captcha"
         />
 
-        <button id="submit-btn" type="submit">
+        <button id="submit-btn" type="submit" aria-label="Submit contact form">
           Submit Form
         </button>
 

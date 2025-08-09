@@ -10,7 +10,7 @@ import { faJava } from "@fortawesome/free-brands-svg-icons";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
 
 // Function to download resume pdf when the download button is clicked
-function onButtonClick(){
+function onButtonClick() {
   const resUrl = resume;
   const link = document.createElement("a");
   link.href = resUrl;
@@ -25,15 +25,17 @@ function About() {
     <section id="about-section">
       <div id="about-icons">
         <h2 className="section-title">About</h2>
-        <button 
-        id="resume-btn" 
-        type="button"
-        onClick={onButtonClick}
+        <button
+          id="resume-btn"
+          type="button"
+          onClick={onButtonClick}
+          aria-label="Download resume"
         >
           <FontAwesomeIcon
             icon={faDownload}
             style={{ color: "#ffffff" }}
             id="download-icon"
+            aria-hidden="true"
           />
           Download Resume
         </button>
@@ -42,11 +44,13 @@ function About() {
           target="_blank"
           rel="noopener noreferrer"
           className="github-link"
+          aria-label="Open github profile"
         >
           <FontAwesomeIcon
             icon={faGithub}
             size="2x" // changes size
             style={{ color: "#B197FC" }}
+            aria-hidden="true"
           />
         </a>
 
@@ -55,11 +59,13 @@ function About() {
           target="_blank"
           rel="noopener noreferrer"
           className="linkedin-link"
+          aria-label="Open linkedin profile"
         >
           <FontAwesomeIcon
             icon={faLinkedin}
             size="2x"
             style={{ color: "#74C0FC" }}
+            aria-hidden="true"
           />
         </a>
       </div>
@@ -109,7 +115,7 @@ function About() {
               icon={faPython}
               iconSize="3x"
               iconColor="#3776AB"
-              libraries="NumPy, Sympy, MatPlotLib, Seaborn, SciKit-Learn, Torch, NLTK, Flask"
+              libraries="NumPy, Sympy, MatPlotLib, Seaborn, SciKit-Learn, Torch, NLTK, Flask, HoloViz"
             />
           </div>
         </div>

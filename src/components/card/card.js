@@ -10,6 +10,7 @@ function Card(props) {
             icon={props.icon}
             size={props.iconSize}
             style={{ color: props.iconColor }}
+            aria-hidden="true"
           />
         </div>
         <div className="card-title">

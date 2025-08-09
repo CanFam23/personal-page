@@ -14,6 +14,7 @@ function Footer() {
             href="https://github.com/CanFam23"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Open github profile"
           >
             GitHub
           </a>{" "}
@@ -22,6 +23,7 @@ function Footer() {
             href="https://www.linkedin.com/in/nicholas-clouse/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Open linkedin profile"
           >
             LinkedIn
           </a>

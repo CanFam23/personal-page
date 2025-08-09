@@ -1,15 +1,16 @@
 import "./Experience.css";
 
+// Experience text
 const experiences = [
   {
     company: "MSU - Space Science and Engineering Lab (SSEL)",
     position: "Software Engineer Intern",
     dateRange: "May 2025 – August 2025",
     bulletPoints: [
-    "Improved data parsing eﬃciency by 62.5% by utilizing multiprocessing in Python.",
-    "Developed a scalable data pipeline capable of handling gigabyte-scale datasets.",
-    "Built a web application using Python, integrated with InfluxDB, to visualize instrument data from the International Space Station.",
-    "Developed and optimized Ruby scripts to support large data transfers between satellite and a ground station, focusing on reliability and performance"
+      "Improved data parsing eﬃciency by 62.5% by utilizing multiprocessing in Python.",
+      "Developed a scalable data pipeline capable of handling gigabyte-scale datasets.",
+      "Built a web application using Python, integrated with InfluxDB, to visualize instrument data from the International Space Station.",
+      "Developed and optimized Ruby scripts to support large data transfers between satellite and a ground station, focusing on reliability and performance",
     ],
   },
   {
@@ -36,6 +37,7 @@ const experiences = [
   },
 ];
 
+// Make experience entries from data above
 const expComps = experiences.map((exp, index) => (
   <ExpEntry
     key={index}
@@ -46,8 +48,10 @@ const expComps = experiences.map((exp, index) => (
   />
 ));
 
+// One entry in the experience section
 function ExpEntry(props) {
   const bps = props.bulletPoints;
+  // List of bullet points
   const bpsLi = bps.map((bp, index) => (
     <li key={index} className="bullet-point">
       {bp}
@@ -67,6 +71,7 @@ function ExpEntry(props) {
   );
 }
 
+// Experience section
 function Experience() {
   return (
     <section id="experience">

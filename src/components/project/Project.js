@@ -6,6 +6,7 @@ import BookRecDemo from "../../assets/BookRecDemo.png";
 import MazeRunnerDemo from "../../assets/MazeRunnerDemo.png";
 import ImageModal from "../imageModal/ImageModal";
 
+// Project data
 const projects = [
   {
     title: "InitMusic",
@@ -40,8 +41,9 @@ const projects = [
   },
 ];
 
+// Project component
 function Project() {
-
+  // Make a card for each project
   const projCards = projects.map((project, index) => {
     return (
       <ProjectCard
@@ -64,11 +66,13 @@ function Project() {
   );
 }
 
+// Project card component
 function ProjectCard(props) {
   const tech = props.techUsed;
 
   const techCards = tech.map((t, index) => <TechCard key={index} title={t} />);
 
+  // Alternating image sides based on index
   return (
     <div className="project-card">
       <div className="project-header">

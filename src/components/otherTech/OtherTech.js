@@ -13,6 +13,7 @@ import { faDatabase, faR } from "@fortawesome/free-solid-svg-icons";
 function OtherTech() {
   const iconSize = "2x";
 
+  // Technologies
   const tech = [
     {
       name: "HTML",
@@ -72,6 +73,7 @@ function OtherTech() {
     },
   ];
 
+  // Make cards from tech data
   const techCards = tech.map((techItem, index) => (
     <Card
       className="other-card"

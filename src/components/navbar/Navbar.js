@@ -114,6 +114,7 @@ function Navbar() {
               icon={faBars}
               size="2xl"
               style={{ color: "#ffffff" }}
+              aria-label="Open menu"
             />
           </button>
         )}

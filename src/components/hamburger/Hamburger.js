@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Hamburger(props) {
+  // Make hamburger items
   const navItems = props.names.map((name, index) => {
     return (
       <li key={index} className="ham-list-item">
@@ -16,6 +17,7 @@ function Hamburger(props) {
     );
   });
 
+  // Only return HTML if menu should be displayed
   if (!props.display) return null;
 
   return (
