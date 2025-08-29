@@ -104,7 +104,7 @@ function Navbar() {
     <header id="nav-header">
       <nav id="nav-bar">
         <span id="logo">
-          <a href="#about-section">NC</a>
+          <a href="#about">NC</a>
         </span>
         <ul className="nav-list">{navBarItems}</ul>
 
