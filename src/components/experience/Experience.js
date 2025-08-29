@@ -18,10 +18,10 @@ const experiences = [
     position: "Outside Services",
     dateRange: "June 2023 – August 2024 (Seasonal)",
     bulletPoints: [
-      "Welcomed club members and guests, providing assistance with parking vehicles.",
-      "Cleaned and maintained golf clubs and golf carts, ensuring they were ready for use.",
-      "Organized and upheld the cleanliness of the bag room, managing inventory efficiently.",
-      "Assisted with tournament preparations and setting up equipment.",
+      "Provided high-quality member support by assisting guests and ensuring smooth operations during arrivals and events.",
+      "Maintained and prepared golf equipment (clubs, carts, balls) with attention to detail, ensuring readiness and reliability.",
+      "Organized and tracked inventory in the bag room, improving efficiency and maintaining a clean, well-structured environment.",
+      "Supported tournament logistics by setting up equipment and coordinating event preparations.",
     ],
   },
   {
