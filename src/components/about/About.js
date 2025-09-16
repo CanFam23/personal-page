@@ -88,7 +88,7 @@ function About() {
             </p>
             <div>
               <p id="interested-p">Interesed in:</p>
-              <p>Full-Stack and Backend Development, Machine Learning, Data Analysis</p>
+              <p>Backend & Full-Stack Development, Machine Learning, Data Analysis</p>
             </div>
           </div>
           <div id="headshot-container">
