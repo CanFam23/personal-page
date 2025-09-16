@@ -78,15 +78,13 @@ function About() {
                 <span className="material-symbols-outlined">pin_drop</span>
                 Helena, Montana, USA
               </address>
-              <p>
-                <strong>3.7 GPA</strong>
-              </p>
             </header>
 
             <p id="about-p">
-              I’m a senior student-athlete, majoring in both Computer Science
-              and Data Science at <strong>Carroll College</strong> while kicking and punting on
-              the football team.
+              I’m a senior student-athlete, majoring in 
+              both <strong>Computer Science</strong> and <strong>Data Science</strong> 
+              at Carroll College while kicking and punting on
+              the football team and maintaining a 3.7 GPA.
             </p>
             <div>
               <p id="interested-p">Interesed in:</p>
