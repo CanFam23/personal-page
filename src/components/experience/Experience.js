@@ -4,13 +4,13 @@ import "./Experience.css";
 const experiences = [
   {
     company: "MSU - Space Science and Engineering Lab (SSEL)",
-    position: "Software Engineer Intern",
+    position: "Software Engineer Intern (Paid)",
     dateRange: "May 2025 – August 2025",
     bulletPoints: [
       "Improved data parsing eﬃciency by 62.5% by utilizing multiprocessing in Python.",
-      "Developed a scalable data pipeline capable of handling gigabyte-scale datasets.",
-      "Built a web application using Python, integrated with InfluxDB, to visualize instrument data from the International Space Station.",
-      "Developed and optimized Ruby scripts to support large data transfers between satellite and a ground station, focusing on reliability and performance.",
+      "Developed a scalable data pipeline to process 1–2 GB of sensor data (measurements, health, position) from an instrument aboard the International Space Station in near real time.",
+      "Built a Python-based web application with InfluxDB integration to visualize pipeline data, enabling easier monitoring and analysis.",
+      "Engineered and optimized Ruby scripts to ensure fast, reliable data transfers between satellite and ground systems.",
     ],
   },
   {
@@ -20,21 +20,10 @@ const experiences = [
     bulletPoints: [
       "Provided high-quality member support by assisting guests and ensuring smooth operations during arrivals and events.",
       "Maintained and prepared golf equipment (clubs, carts, balls) with attention to detail, ensuring readiness and reliability.",
-      "Organized and tracked inventory in the bag room, improving efficiency and maintaining a clean, well-structured environment.",
       "Supported tournament logistics by setting up equipment and coordinating event preparations.",
+      "Delivered excellent customer service by addressing member needs quickly and professionally."
     ],
-  },
-  {
-    company: "Whitefish Mountain Resort",
-    position: "Lift Attendant",
-    dateRange: "December 2023 – January 2024 (Seasonal)",
-    bulletPoints: [
-      "Assisted guests with safely boarding and exiting ski lifts, ensuring a smooth experience.",
-      "Conducted opening inspections and closing shutdown procedures to maintain lift safety.",
-      "Maintained and organized lift mazes, ramps, and signage for efficient guest flow.",
-      "Monitored weather conditions and adjusted lift operations accordingly.",
-    ],
-  },
+  }
 ];
 
 // Make experience entries from data above
