@@ -82,8 +82,7 @@ function About() {
 
             <p id="about-p">
               I’m a senior student-athlete, majoring in 
-              both <strong>Computer Science</strong> and <strong>Data Science</strong> 
-              at Carroll College while kicking and punting on
+              both <strong>Computer Science</strong> and <strong>Data Science</strong> at Carroll College while kicking and punting on
               the football team and maintaining a 3.7 GPA.
             </p>
             <div>
@@ -105,6 +104,7 @@ function About() {
               iconSize="3x"
               iconColor="#f89820"
               libraries="Spring/Spring Boot, Hibernate / JPA, JUnit, SLF4J, Gradle"
+              isFA={true}
             />
 
             <Card
@@ -114,6 +114,7 @@ function About() {
               iconSize="3x"
               iconColor="#3776AB"
               libraries="NumPy, Sympy, MatPlotLib, Seaborn, SciKit-Learn, Torch, NLTK, Flask, HoloViz"
+              isFA={true}
             />
           </div>
         </div>
