@@ -1,17 +1,30 @@
 import "./card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CIcon } from "@coreui/icons-react";
 
 function Card(props) {
   return (
     <div className="card">
       <div className="card-header">
         <div className="card-image">
-          <FontAwesomeIcon
-            icon={props.icon}
-            size={props.iconSize}
-            style={{ color: props.iconColor }}
-            aria-hidden="true"
-          />
+          {props.icon &&
+            (props.isFA ? (
+              <FontAwesomeIcon
+                icon={props.icon}
+                size={props.iconSize}
+                style={{ color: props.iconColor }}
+                aria-hidden="true"
+              />
+            ) : (
+              <CIcon
+                icon={props.icon}
+                size={props.iconSize}
+                style={{
+                  width: "30px",
+                  height: "30px"
+                }}
+              />
+            ))}
         </div>
         <div className="card-title">
           <h3 className="card-lang">{props.name}</h3>

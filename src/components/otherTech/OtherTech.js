@@ -1,20 +1,70 @@
 import "./OtherTech.css";
 import Card from "../card/card";
-import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faReact,
-  faFigma,
-  faGitAlt,
+import { 
+  faHtml5, 
+  faCss3Alt, 
+  faJs, 
+  faReact, 
+  faGitAlt, 
+  faFigma, 
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faR } from "@fortawesome/free-solid-svg-icons";
+import { cibPostgresql, cibMysql } from "@coreui/icons";
+
+
+function isFontAwesomeIcon(icon) {
+  return icon && typeof icon === "object" && "iconName" in icon && "prefix" in icon;
+}
 
 function OtherTech() {
-  const iconSize = "2x";
+  const iconSize = "2x"; // adjust as needed
 
-  // Technologies
   const tech = [
+    // Backend / Databases first
+    {
+      name: "SQL",
+      desc: "Query Language",
+      icon: faDatabase,
+      iconSize: iconSize,
+      iconColor: "#00758F", // generic SQL blue
+    },
+    {
+      name: "MySQL",
+      desc: "RDMS",
+      icon: cibMysql,
+      iconSize: "xl",
+      iconColor: "#4479A1", // MySQL blue
+    },
+    {
+      name: "PostgreSQL",
+      desc: "RDMS",
+      icon: cibPostgresql,
+      iconSize: "lg",
+      iconColor: "#336791", // PostgreSQL blue
+    },
+
+    // Frontend / Frameworks
+    {
+      name: "Next.js",
+      desc: "React Framework",
+      icon: faReact, // use React icon
+      iconSize: iconSize,
+      iconColor: "#000000", // Next.js black
+    },
+    {
+      name: "React",
+      desc: "JavaScript Library",
+      icon: faReact,
+      iconSize: iconSize,
+      iconColor: "#61DBFB",
+    },
+    {
+      name: "JavaScript",
+      desc: "Programming Language",
+      icon: faJs,
+      iconSize: iconSize,
+      iconColor: "#f7df1e",
+    },
     {
       name: "HTML",
       desc: "Markup Language",
@@ -29,13 +79,8 @@ function OtherTech() {
       iconSize: iconSize,
       iconColor: "#264de4",
     },
-    {
-      name: "JavaScript",
-      desc: "Programming Language",
-      icon: faJs,
-      iconSize: iconSize,
-      iconColor: "#f7df1e",
-    },
+
+    // Data / Analytics
     {
       name: "R",
       desc: "Programming Language",
@@ -43,19 +88,14 @@ function OtherTech() {
       iconSize: iconSize,
       iconColor: "#276DC3",
     },
+
+    // Tools
     {
-      name: "SQL/MySQL",
-      desc: "Query Language/ RDBMS",
-      icon: faDatabase,
+      name: "Git",
+      desc: "Version Control",
+      icon: faGitAlt,
       iconSize: iconSize,
-      iconColor: "#00758F", // MySQL blue
-    },
-    {
-      name: "React",
-      desc: "JavaScript Library",
-      icon: faReact,
-      iconSize: iconSize,
-      iconColor: "#61DBFB",
+      iconColor: "#f1502f",
     },
     {
       name: "Figma",
@@ -63,13 +103,6 @@ function OtherTech() {
       icon: faFigma,
       iconSize: iconSize,
       iconColor: "#a259ff",
-    },
-    {
-      name: "Git",
-      desc: "Version Control",
-      icon: faGitAlt,
-      iconSize: iconSize,
-      iconColor: "#f1502f",
     },
   ];
 
@@ -83,12 +116,13 @@ function OtherTech() {
       icon={techItem.icon}
       iconSize={techItem.iconSize}
       iconColor={techItem.iconColor}
+      isFA={isFontAwesomeIcon(techItem.icon)}
     />
   ));
 
   return (
     <section id="other-tech">
-      <h2 className="section-title">Other Technologies</h2>
+      <h2 className="section-title">Other Technologies & Tools</h2>
       <div className="card-grid">{techCards}</div>
     </section>
   );
