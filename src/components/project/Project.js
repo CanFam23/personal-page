@@ -4,10 +4,30 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import initMusicDemo from "../../assets/initMusicDemo.png";
 import BookRecDemo from "../../assets/BookRecDemo.png";
 import MazeRunnerDemo from "../../assets/MazeRunnerDemo.png";
+import ItGoesDemo from "../../assets/ItGoesDemo.png";
 import ImageModal from "../imageModal/ImageModal";
 
 // Project data
 const projects = [
+  {
+    title: "It Goes",
+    desc: "It Goes is a full-stack web app for sharing and tracking ski trips. Users can post trips, view statistics with graphs, explore interactive maps, and browse photo and video galleries. Currently in development, the app will eventually be deployed and hosted on AWS.",
+    img: ItGoesDemo,
+    gitLink: "https://github.com/CanFam23/it-goes",
+    techUsed: [
+      "Java",
+      "Spring Boot",
+      "JPA",
+      "Hibernate",
+      "JUnit",
+      "HTML",
+      "CSS",
+      "Next.js",
+      "PostgreSQL/PostGIS",
+      "AWS S3",
+      "Git/GitHub",
+    ],
+  },
   {
     title: "InitMusic",
     desc: "InitMusic is a music service that connects users to a vast library of thousands of songs, powered by the Deezer API. Main features include user data persistence, playlist management, song search via Deezer API, security questions for password recovery, and cached song queries for faster lookup.",
@@ -76,15 +96,20 @@ function ProjectCard(props) {
   return (
     <div className="project-card">
       <div className="project-header">
-          <h3>{props.title}</h3>
-          <a target="_blank" rel="noopener noreferrer" href={props.gitLink} className="git-link">
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="xl"
-              style={{ color: "#B197FC" }}
-            />
-            Github
-          </a>
+        <h3>{props.title}</h3>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={props.gitLink}
+          className="git-link"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="xl"
+            style={{ color: "#B197FC" }}
+          />
+          Github
+        </a>
       </div>
       <div className="project-body">
         {props.index % 2 === 1 ? (
