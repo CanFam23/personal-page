@@ -76,29 +76,15 @@ function ProjectCard(props) {
   return (
     <div className="project-card">
       <div className="project-header">
-        {props.index % 2 === 1 ? (
-          <>
-            <a target="_blank" rel="noopener noreferrer" href={props.gitLink}>
-              <FontAwesomeIcon
-                icon={faGithub}
-                size="2x"
-                style={{ color: "#B197FC" }}
-              />
-            </a>
-            <h3>{props.title}</h3>
-          </>
-        ) : (
-          <>
-            <h3>{props.title}</h3>
-            <a target="_blank" rel="noopener noreferrer" href={props.gitLink}>
-              <FontAwesomeIcon
-                icon={faGithub}
-                size="2x"
-                style={{ color: "#B197FC" }}
-              />
-            </a>
-          </>
-        )}
+          <h3>{props.title}</h3>
+          <a target="_blank" rel="noopener noreferrer" href={props.gitLink} className="git-link">
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="xl"
+              style={{ color: "#B197FC" }}
+            />
+            Github
+          </a>
       </div>
       <div className="project-body">
         {props.index % 2 === 1 ? (
