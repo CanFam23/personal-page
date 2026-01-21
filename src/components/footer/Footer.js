@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer left">
-        <p>©2025</p>
+        <p>©2026</p>
         <p className="sub-text">Nick Clouse</p>
       </div>
       <div className="footer right">
