@@ -5,10 +5,24 @@ import initMusicDemo from "../../assets/initMusicDemo.png";
 import BookRecDemo from "../../assets/BookRecDemo.png";
 import MazeRunnerDemo from "../../assets/MazeRunnerDemo.png";
 import ItGoesDemo from "../../assets/ItGoesDemo.png";
+import AvyAIDemo from "../../assets/AvyAIDemo.png";
 import ImageModal from "../imageModal/ImageModal";
 
 // Project data
 const projects = [
+  {
+    title: "AvyAI",
+    desc: "I developed a Random Forest classifier that generates daily avalanche danger ratings for mountain ranges around Whitefish, Montana using HRRR weather data and SNOWPACK simulations. The model achieved ∼90% train / ∼60% test accuracy on 5 years of historical data, with ongoing work focused on improving generalization under anomalous snowpack conditions (The snow this year has been rough...). I'm currently building a web interface to present daily danger ratings alongside an AI-generated weather and avalanche forecast.",
+    img: AvyAIDemo,
+    gitLink: "https://github.com/CanFam23/avy-forecasting",
+    techUsed: [
+      "Python",
+      "SK-Learn",
+      "Random Forest",
+      "Data Pipeline",
+      "Git/GitHub",
+    ],
+  },
   {
     title: "It Goes",
     desc: "It Goes is a full-stack web app for sharing and tracking ski trips. Users can post trips, view statistics with graphs, explore interactive maps, and browse photo and video galleries. Currently in development, the app will eventually be deployed and hosted on AWS.",
